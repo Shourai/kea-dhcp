@@ -5,7 +5,7 @@ services:
     container_name: kea-dhcp
     environment:
       - DHCP4_SERVER=true
-      - DHCP6_SERVER=true
+      - DHCP6_SERVER=false
     volumes:
       - ./kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
       - ./kea-dhcp6.conf:/etc/kea/kea-dhcp6.conf
