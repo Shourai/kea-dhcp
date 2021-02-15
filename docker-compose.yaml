@@ -9,8 +9,5 @@ services:
     volumes:
       - ./kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
       - ./kea-dhcp6.conf:/etc/kea/kea-dhcp6.conf
-    ports:
-      - "67:67"
-      - "68:68"
     network_mode: "host"
     restart: always
