@@ -6,7 +6,7 @@ LABEL Description="kea-dhcp Docker image based on Alpine Linux."
 ENV DHCP4_SERVER=true
 ENV DHCP6_SERVER=false
 
-RUN apk --no-cache add kea-dhcp4 kea-dhcp6 bash
+RUN apk --no-cache add kea bash
 
 COPY kea.sh /etc/kea/
 
