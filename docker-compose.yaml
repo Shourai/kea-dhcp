@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   kea-dhcp:
-    image: shourai/kea-dhcp-alpine
+    image: shourai/kea-dhcp
     container_name: kea-dhcp
     environment:
       - DHCP4_SERVER=true

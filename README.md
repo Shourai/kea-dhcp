@@ -1,4 +1,4 @@
-# kea-dhcp-alpine
+# kea-dhcp
 
 A Docker container based on alpine which implements kea-dhcp v4 and v6.
 
