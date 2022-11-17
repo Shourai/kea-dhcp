@@ -10,6 +10,6 @@ services:
     volumes:
       - ./kea-dhcp4.conf:/etc/kea/kea-dhcp4.conf
       - ./kea-dhcp6.conf:/etc/kea/kea-dhcp6.conf
-      - ./kea-leases4.csv:/tmp/kea-leases4.csv
-    network_mode: "host"
+      - ./leases:/tmp/
+    network_mode: host
     restart: always
